@@ -1,0 +1,154 @@
+{
+  "user_data_dir": "./chrome_profile",
+  "db_path": "./data/bili_lottery.db",
+  "log_path": "./logs/lottery_system.log",
+  "config_file": "./config.json",
+  "cookie_file": "./cookies.json",
+  "proxy_list": [],
+  "comment_samples": [
+    "支持UP主！祝越来越好！",
+    "已三连，期待好运降临~",
+    "参与抽奖，感谢UP主的福利！",
+    "求中奖！会一直支持你的！",
+    "来拉低中奖率了哈哈",
+    "冲冲冲！希望能中一次！",
+    "关注很久了，支持一波！",
+    "好耶！希望能抽到！",
+    "参与一下，万一中了呢",
+    "UP主大气！支持支持！"
+  ],
+  "page_load_timeout": 40,
+  "implicit_wait": 10,
+  "explicit_wait": 20,
+  "scroll_count": 3,
+  "max_retries": 3,
+  "enable_like": true,
+  "enable_repost": true,
+  "enable_comment": true,
+  "enable_follow": true,
+  "enable_lottery_click": true,
+  "enable_search": true,
+  "search_keywords": [
+    "互动抽奖",
+    "转发抽奖",
+    "关注抽奖",
+    "福利",
+    "宠粉福利"
+  ],
+  "search_max_pages": 3,
+  "search_interval_hours": 4,
+  "search_sort_type": "pubdate",
+  "search_date_range": 7,
+  "lottery_hub_ups": [],
+  "hub_scan_interval_hours": 2,
+  "smtp": {
+    "host": "smtp.qq.com",
+    "port": 587,
+    "user": "",
+    "password": "",
+    "to": "",
+    "use_tls": true
+  },
+  "push": {
+    "serverchan_key": "",
+    "dingtalk_token": "",
+    "dingtalk_secret": "",
+    "wx_webhook": "",
+    "bark_key": "",
+    "bark_server": "https://api.day.app"
+  },
+  "smart_filter": {
+    "blacklist_uids": [],
+    "blacklist_keywords": [
+      "骗人",
+      "虚假",
+      "骗局",
+      "已开奖",
+      "抽奖结束",
+      "引流",
+      "加群"
+    ],
+    "min_prize_count": 1,
+    "max_days_until_draw": 60,
+    "drawn_keywords": [
+      "已开奖",
+      "中奖名单",
+      "抽奖结果",
+      "开奖啦",
+      "恭喜以下"
+    ],
+    "expired_keywords": [
+      "已过期",
+      "活动结束",
+      "抽奖截止",
+      "已截止"
+    ],
+    "high_value_keywords": [
+      "iPhone",
+      "iPad",
+      "MacBook",
+      "Switch",
+      "PS5",
+      "现金",
+      "红包",
+      "显卡",
+      "无人机",
+      "相机",
+      "AirPods"
+    ],
+    "low_value_keywords": [
+      "优惠券",
+      "满减",
+      "积分",
+      "虚拟",
+      "壁纸",
+      "表情包"
+    ]
+  },
+  "risk_control": {
+    "enable_fingerprint_mask": true,
+    "enable_behavior_sim": true,
+    "enable_mouse_trail": true,
+    "canvas_noise_level": 0.02,
+    "audio_noise_level": 0.001,
+    "webgl_vendor_rotation": true,
+    "font_randomization": true,
+    "timezone_randomization": true,
+    "min_read_time": 3.0,
+    "max_read_time": 8.0,
+    "scroll_randomization": true,
+    "click_offset_randomization": true,
+    "tab_switching_simulation": true,
+    "cache_clearing_interval": 5,
+    "navigator_hardware_concurrency": 8,
+    "screen_resolution_rotation": true,
+    "webrtc_disabled": true,
+    "random_like_non_lottery": true
+  },
+  "frequency": {
+    "base_interval_up": 120.0,
+    "interval_jitter_percent": 0.4,
+    "adaptive_cooldown": true,
+    "rate_limit_backoff": 300.0,
+    "consecutive_error_threshold": 3,
+    "daily_participation_limit": 100,
+    "burst_mode": false,
+    "burst_window_count": 5,
+    "burst_window_minutes": 30
+  },
+  "participate_strategy": "all",
+  "enable_win_tracking": true,
+  "win_check_interval_hours": 6,
+  "night_mode": {
+    "enabled": true,
+    "start_hour": 0,
+    "end_hour": 7,
+    "interval_multiplier": 3.0
+  },
+  "multi_account": {
+    "enabled": false,
+    "cookie_files": [],
+    "switch_on_ban": true,
+    "switch_interval_hours": 12
+  }
+}

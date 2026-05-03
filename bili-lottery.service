@@ -1,0 +1,23 @@
+[Unit]
+Description=Bilibili Lottery Automation System v5.1
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/bili-lottery
+ExecStart=/usr/bin/python3 /opt/bili-lottery/main.py
+ExecStop=/bin/kill -TERM $MAINPID
+Restart=on-failure
+RestartSec=30
+KillMode=process
+# 内存限制：防止Chrome泄漏导致系统卡死
+MemoryMax=1G
+# 优雅关闭超时
+TimeoutStopSec=30
+StandardOutput=append:/opt/bili-lottery/logs/service.log
+StandardError=append:/opt/bili-lottery/logs/service_error.log
+
+[Install]
+WantedBy=multi-user.target
